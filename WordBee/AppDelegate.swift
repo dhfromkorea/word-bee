@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let rootViewController = window!.rootViewController as! UINavigationController
+        let wordsViewController = rootViewController.topViewController as! WordsViewController
+        wordsViewController.wordStore = WordStore()
         return true
     }
 

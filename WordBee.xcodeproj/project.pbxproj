@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		E371160A1D63589600E3F290 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37116091D63589600E3F290 /* AppDelegate.swift */; };
-		E371160C1D63589600E3F290 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E371160B1D63589600E3F290 /* ViewController.swift */; };
 		E371160F1D63589600E3F290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E371160D1D63589600E3F290 /* Main.storyboard */; };
 		E37116111D63589600E3F290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E37116101D63589600E3F290 /* Assets.xcassets */; };
 		E37116141D63589600E3F290 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37116121D63589600E3F290 /* LaunchScreen.storyboard */; };
+		E371161F1D635D8400E3F290 /* WordBee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E371161D1D635D8400E3F290 /* WordBee.xcdatamodeld */; };
+		E37116251D63635700E3F290 /* WordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37116241D63635700E3F290 /* WordsViewController.swift */; };
+		E371162B1D63660800E3F290 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37116291D63660800E3F290 /* Word.swift */; };
+		E371162D1D63676800E3F290 /* WordDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E371162C1D63676800E3F290 /* WordDataSource.swift */; };
+		E3F878151D656838000382C4 /* WordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F878141D656838000382C4 /* WordStore.swift */; };
+		E3F878171D6569D9000382C4 /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F878161D6569D9000382C4 /* WordCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E37116061D63589600E3F290 /* WordBee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordBee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37116091D63589600E3F290 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E371160B1D63589600E3F290 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E371160E1D63589600E3F290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E37116101D63589600E3F290 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E37116131D63589600E3F290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E37116151D63589600E3F290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E371161E1D635D8400E3F290 /* WordBee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordBee.xcdatamodel; sourceTree = "<group>"; };
+		E37116241D63635700E3F290 /* WordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsViewController.swift; sourceTree = "<group>"; };
+		E37116291D63660800E3F290 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		E371162C1D63676800E3F290 /* WordDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordDataSource.swift; sourceTree = "<group>"; };
+		E3F878141D656838000382C4 /* WordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordStore.swift; sourceTree = "<group>"; };
+		E3F878161D6569D9000382C4 /* WordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +65,13 @@
 			isa = PBXGroup;
 			children = (
 				E37116091D63589600E3F290 /* AppDelegate.swift */,
-				E371160B1D63589600E3F290 /* ViewController.swift */,
 				E371160D1D63589600E3F290 /* Main.storyboard */,
+				E371161D1D635D8400E3F290 /* WordBee.xcdatamodeld */,
+				E37116291D63660800E3F290 /* Word.swift */,
+				E3F878141D656838000382C4 /* WordStore.swift */,
+				E371162C1D63676800E3F290 /* WordDataSource.swift */,
+				E37116241D63635700E3F290 /* WordsViewController.swift */,
+				E3F878161D6569D9000382C4 /* WordCell.swift */,
 				E37116101D63589600E3F290 /* Assets.xcassets */,
 				E37116121D63589600E3F290 /* LaunchScreen.storyboard */,
 				E37116151D63589600E3F290 /* Info.plist */,
@@ -135,8 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E371160C1D63589600E3F290 /* ViewController.swift in Sources */,
+				E37116251D63635700E3F290 /* WordsViewController.swift in Sources */,
+				E371161F1D635D8400E3F290 /* WordBee.xcdatamodeld in Sources */,
+				E371162B1D63660800E3F290 /* Word.swift in Sources */,
 				E371160A1D63589600E3F290 /* AppDelegate.swift in Sources */,
+				E371162D1D63676800E3F290 /* WordDataSource.swift in Sources */,
+				E3F878171D6569D9000382C4 /* WordCell.swift in Sources */,
+				E3F878151D656838000382C4 /* WordStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,8 +306,22 @@
 				E371161A1D63589600E3F290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E371161D1D635D8400E3F290 /* WordBee.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E371161E1D635D8400E3F290 /* WordBee.xcdatamodel */,
+			);
+			currentVersion = E371161E1D635D8400E3F290 /* WordBee.xcdatamodel */;
+			path = WordBee.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E37115FE1D63589600E3F290 /* Project object */;
 }
